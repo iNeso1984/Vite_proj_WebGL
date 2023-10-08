@@ -2,6 +2,7 @@
 
 This project demonstrates the use of Vite for modern web development and WebGL for 3D graphics.
 
+
 ## Introduction
 
 A simple one-page website using Web_GL.

@@ -76,6 +76,9 @@ nav ul {
 
   background-color: black;
 }
+.large-text {
+  font-size: 2.5rem;
+}
 
 /* Example of using relative units for font sizes */
 h1 {

@@ -57,10 +57,16 @@ nav ul {
   color: white;
   z-index: 2;
   position: absolute;
-  font-size: 3rem;
+  font-size: 2.5rem;
   left: 50%;
   top: 75%;
   transform: translate(-50%, -25%);
+}
+p {
+  font-size: 1em; /* Base font size */
+  z-index: 2;
+  color: white;
+  padding-bottom: 20%;
 }
 .about-section {
   color: white;
@@ -77,7 +83,7 @@ nav ul {
   background-color: black;
 }
 .large-text {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 /* Example of using relative units for font sizes */
@@ -102,6 +108,8 @@ p {
   color: white;
   padding-bottom: 20%;
 }
+/*chart*/
+
 /*mobile*/
 @media only screen and (max-width: 700px) {
   body {
@@ -109,18 +117,18 @@ p {
   }
 
   .main-title {
-    font-size: 2em; /* Adjust as needed */
+    font-size: 2rem; /* Adjust as needed */
   }
 
   h2 {
-    font-size: 1.5em; /* Adjust as needed */
+    font-size: 1.5rem; /* Adjust as needed */
   }
 
   p {
-    font-size: 1.5em; /* Adjust as needed */
+    font-size: 1rem; /* Adjust as needed */
   }
   .about-section {
-    color: white;
+    color: rgb(50, 50, 50);
     z-index: 2;
     position: absolute;
     letter-spacing: 2px;

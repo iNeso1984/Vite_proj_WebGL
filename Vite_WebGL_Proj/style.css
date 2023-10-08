@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Spline Sans", sans-serif;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.content {
+  background-color: black;
+}
+
+nav {
+  color: white;
+  z-index: 2;
+  position: relative;
+  padding: 4rem 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+h2 {
+  padding-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.main-nav {
+  transition: transform 0.2s ease-in-out;
+}
+.main-nav:hover {
+  transform: scale(1.05); /* Adjust the scaling factor as needed */
+}
+.main-title {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  font-size: 3rem;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -25%);
+}
+.about-section {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  left: 50%;
+  top: 105%;
+  transform: translate(-50%, -25%);
+  opacity: 0; /* Start with 0 opacity */
+  animation: fadeIn 2s forwards;
+
+  background-color: black;
+}
+
+/* Example of using relative units for font sizes */
+h1 {
+  font-size: 2em; /* 2 times the base font size */
+  z-index: 2;
+  opacity: 0; /* Start with 0 opacity */
+  animation: fadeIn 2s forwards; /* Transition opacity for 1 second */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+p {
+  font-size: 1em; /* Base font size */
+  z-index: 2;
+  color: white;
+  padding-bottom: 20%;
+}
+/*mobile*/
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+
+  .main-title {
+    font-size: 2em; /* Adjust as needed */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Adjust as needed */
+  }
+
+  p {
+    font-size: 1.5em; /* Adjust as needed */
+  }
+  .about-section {
+    color: white;
+    z-index: 2;
+    position: absolute;
+    letter-spacing: 2px;
+    left: 50%;
+    top: 105%;
+    transform: translate(-50%, -25%);
+    background-color: black;
+  }
+}

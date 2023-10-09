@@ -10,7 +10,6 @@ body,
 html {
   overflow-x: hidden;
   font-family: "Spline Sans", sans-serif;
-  scroll-behavior: smooth;
   background-color: black;
 }
 .webgl {
